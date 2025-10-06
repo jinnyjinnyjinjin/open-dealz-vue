@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light py-4 border-bottom">
-        <div class="container col-md-12">
+        <div class="container col-md-12 d-flex justify-content-center">
             <a class="navbar-brand" href="#">Open Dealz</a>
         </div>
     </nav>
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="card-contianer col-md-3 mb-4 p-0">
+            <div class="card-contianer col-md-4 mb-4 p-0">
                 <div class="card-header bg-white border-0 d-flex align-items-center">
                     <img src="" alt="Profile" class="rounded-circle me-2">
                     <span>profile_name</span>
@@ -31,23 +31,33 @@
 </template>
 
 <style>
+
+.navbar {
+    height: 30vh;
+}
+
+.navbar .navbar-brand {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
 .search-input::placeholder {
     font-size: 0.75rem;
     color: #aaa;
 }
 
 .card-contianer {
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    height: 600px;
+    height: 40vh;
     display: flex;
     flex-direction: column;
 }
 
 .card-header {
-    height: 64px;
+    height: 5vh;
 }
 
 .card-header img {
@@ -58,7 +68,6 @@
 
 .card-body {
     flex: 1;
-    height: 500px;
     overflow: hidden;
 }
 
@@ -69,6 +78,6 @@
 }
 
 .card-footer {
-    height: 64px;
+    height: 5vh;
 }
 </style>
